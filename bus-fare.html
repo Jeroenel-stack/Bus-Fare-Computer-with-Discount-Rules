@@ -8,29 +8,8 @@
 <body>
     <h2>Open Console (F12) to View Output</h2>
 
-    <script>
-        const baseFare = 20;
-        const passengers = [
-            { name: "Anna", age: 3 },
-            { name: "Ben", age: 18 },
-            { name: "Lola", age: 65 }
-        ];
-
-        function calculateBusFare(passengers) {
-            let total = 0;
-            for (let p of passengers) {
-                let fare = baseFare;
-                if (p.age <= 5) fare = 0;
-                else if (p.age <= 21) fare *= 0.8;
-                else if (p.age >= 60) fare *= 0.5;
-
-                console.log(`${p.name} (${p.age} y/o): ₱${fare}`);
-                total += fare;
-            }
-            console.log(`Total Fare: ₱${total}`);
-        }
-
-        calculateBusFare(passengers);
+    <script src="app.js">
+      
     </script>
 </body>
 </html>
